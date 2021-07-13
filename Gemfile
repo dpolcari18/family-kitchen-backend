@@ -19,6 +19,9 @@ gem 'puma', '~> 5.0'
 # JSON Web Tokens for Authorization with Auth0
 gem 'jwt'
 
+# GraphQL
+gem 'graphql'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
