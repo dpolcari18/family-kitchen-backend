@@ -1,5 +1,6 @@
 module Types
   class RecipeType < Types::BaseObject
+    # Model Fields
     field :id, ID, null: false
     field :name, String, null: false
     field :prep_time, Integer, null: false
@@ -7,5 +8,7 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :family_id, Integer, null: false
+
+    # Custom Fields
   end
 end
