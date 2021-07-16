@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
+  if Rails.env.development?
+    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/localhost:3000"
+  end
   post "/graphql", to: "graphql#execute"
-  resources :ingredients
-  resources :ingredient_quantities
-  resources :steps
-  resources :recipes
-  resources :families
-  resources :user_families
-  resources :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

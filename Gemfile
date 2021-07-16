@@ -22,6 +22,9 @@ gem 'jwt'
 # GraphQL
 gem 'graphql'
 
+# GraphiQL for testing
+gem 'graphiql-rails'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
