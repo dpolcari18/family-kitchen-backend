@@ -10,5 +10,7 @@ module Types
     field :family_id, Integer, null: false
 
     # Custom Fields
+    field :ingredients, [Types::IngredientType], null: false
+    field :ingredient_quantities, [Types::IngredientQuantityType], null: false
   end
 end

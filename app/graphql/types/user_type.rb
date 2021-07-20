@@ -7,5 +7,6 @@ module Types
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
     # Custom Fields
+    field :families, [Types::FamilyType], null: false
   end
 end
