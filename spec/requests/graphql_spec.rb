@@ -45,5 +45,9 @@ RSpec.describe 'GraphQL', type: :request do
         it 'returns an array of recipes the family has created' do
             expect(response['data']['family']['recipes']).to be_an(Array)
         end
+
+        it 'returns an array of ingredients for the recipe' do
+            expect(response['data']['family']['recipes'].first['ingredients']).to be_an(Array)
+        end
     end
 end
