@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe UserFamily, type: :model do
   
   subject {
-    user = User.create(auth_id: 'authid')
+    user = User.create(auth_id: 'newid')
     family = Family.create(name: 'Polcari')
     described_class.new(user_id: user.id, family_id: family.id, head: true)
   }

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
 
   subject {
-    described_class.new(auth_id: 'authid')
+    described_class.new(auth_id: 'anotherid')
   }
 
   describe 'create' do
